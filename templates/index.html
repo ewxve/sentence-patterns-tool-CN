@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentence Patterns Quiz</title>
+</head>
+<body>
+    <h1>Comparison Pattern Practice</h1>
+
+    <p>Translate: "New York is bigger than Boston."</p>
+
+    <form method="POST">
+        <input type="text" name="answer" placeholder="Type Chinese sentence here">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+
+    <hr>
+
+    <p>Vocabulary:</p>
+    <ul>
+        <li>纽约 - New York</li>
+        <li>波士顿 - Boston</li>
+        <li>大 - big</li>
+    </ul>
+</body>
+</html>
